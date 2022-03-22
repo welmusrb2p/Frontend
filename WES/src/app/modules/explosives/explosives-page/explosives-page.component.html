@@ -1,0 +1,66 @@
+<ngx-spinner 
+bdColor = "rgba(215,198,198,0.8)"
+size = "medium"
+color = "#19b10d"
+type = "ball-scale-multiple"
+[fullScreen] = "true">
+<p style="color: white" > Loading... </p></ngx-spinner>
+
+<div class="container">
+    <form [formGroup]="weaponForm" (ngSubmit)="onSubmit()" class="pt-4 pb-4">
+
+      <div class="row">
+        <div class="col-md-5 d-flex">
+          <div class="form__input w-100">
+            <div class="d-inline">
+              <input
+                type="text"
+                class="form-control mb-4 form-control-lg"
+                formControlName="name"
+                id="name"
+              />
+
+              <span class="font-sm text-danger" *ngIf="weaponForm.invalid && name?.touched">
+                {{errorName}}
+              </span>
+            </div>
+
+            <input
+              type="text"
+              class="form-control mb-4 form-control-lg"
+              formControlName="number"/>
+
+            <span class="font-sm text-danger" *ngIf="weaponForm.invalid && number?.touched">
+              {{errorNumber}}
+            </span>
+
+            <select
+              class="form-control"
+              name="category"
+              formControlName="category">
+              <option value="" selected="Selected">
+              </option>
+              <option *ngFor="let item of categoryDataSource"
+                value="{{ item.id }}">
+                <span> {{ item.name }}</span>
+              </option>
+            </select>
+
+            <span class="font-sm text-danger" *ngIf="weaponForm.invalid && category?.touched">
+              {{ errorCategory}}
+            </span>
+          </div>
+        </div>
+     
+
+        <div class="col-md-12 flex-row-reverse d-flex">
+          <button
+            class="btn btn-dis form__button mt-4"
+            
+            type="submit"> Save
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+

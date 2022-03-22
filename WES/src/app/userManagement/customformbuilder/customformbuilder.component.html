@@ -1,0 +1,12 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div *ngFor="let control of formData">
+        <label>{{control.label}}</label>
+        
+    </div>
+<button type="submit"> Save</button>
+</form>
+
+<li class="upper-links">
+    <a class="links" routerLinkActive="home"
+      routerLink="/weapon/setting">{{'navbar.home' | translate }}</a>
+  </li>

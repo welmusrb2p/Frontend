@@ -1,0 +1,23 @@
+
+   [
+        {
+            "name":"firstName",
+            "label":"First Name",
+            "value":"",
+            "type":"text",
+            "validators":{
+                    "required":true,
+                    "minLength":10
+            }
+        },
+        {
+            "name":"lastName",
+            "label":"Last Name",
+            "value":"",
+            "type":"text",
+            "validators":{
+                    "required":true,
+                    "minLength":10
+            }
+        }
+    ]

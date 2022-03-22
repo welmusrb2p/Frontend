@@ -1,0 +1,33 @@
+<div class="app-container app-theme-white">
+
+<app-header></app-header>
+
+<app-navbar></app-navbar>
+
+<div class="app-page ">
+
+  <div class="site-map shadow-sm mb-3 bg-white">
+      <div class="sitemap_layout">
+
+          <nav aria-label="breadcrumb ">
+              <ol class="breadcrumb mb-0 pb-0 breadcrumb-list">
+                  <li class="breadcrumb-item "><a href="#" class="text-muted d-flex align-items-center">
+                          <img src="./assets/img/Home.svg" class="img-fluid ms-1 me-2" width="19"
+                              height="20" />
+                          الرئيسية</a></li>
+                  <li class="breadcrumb-item " aria-current="page">المستودعات</li>
+              </ol>
+          </nav>
+
+      </div>
+  </div>
+
+  <div class="page_layout ">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>
+
+</div>
+
+<app-footer></app-footer>

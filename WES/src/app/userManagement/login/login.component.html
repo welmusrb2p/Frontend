@@ -1,0 +1,24 @@
+<div class="container">
+
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
+    <div class="row">
+     <div class="col-md-6">
+       <label for="Username">{{'username'|translate}}</label>
+
+       <input type="text" class="form-control input--style" formControlName="username" >
+
+     </div>
+    </div>
+     <div class="row">
+     <div class="col-md-6">
+      <label for="password">{{'password'|translate}}</label>
+      
+      <input type="password" class="form-control input--style" formControlName="passWord" >
+    </div>
+
+    </div>
+    <button class="navbar-toggler" type="submit" aria-controls="navbarTogglerDemo01">
+      <span class="navbar-toggler-icon">Save</span>
+  </button>
+  </form>
+</div>
