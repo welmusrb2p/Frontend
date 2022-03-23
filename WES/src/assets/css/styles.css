@@ -1033,7 +1033,7 @@
   .maps-with-background{
     min-height: 400px;
     width: 100%;
-    background: url('../assets/img/kindpng_41722.png') no-repeat center;
+    background: url('../img/kindpng_41722.png') no-repeat center;
     background-size: cover;
     position: relative;
   }
