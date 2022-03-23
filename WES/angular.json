@@ -30,12 +30,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/css/styles.css",
               "node_modules/ngx-toastr/toastr.css",
               "node_modules/ngx-spinner/animations/ball-scale-multiple.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/assets/vendor/jquery-smartwizard-master/jquery-smartwizard-master/dist/css/smart_wizard_all.min.css",
-              "src/assets/vendor/slick-1.8.1/slick-1.8.1/slick/slick.css",
+              "src/assets/css/bootstrap.rtl.min.css",
+              "src/assets/css/styles.css",
               {
                 "input": "src/assets/css/styles-en.css",
                 "bundleName": "styles-en",
@@ -50,10 +48,8 @@
             ],
             "scripts": [  
               "src/assets/js/jquery3.5.1.min.js",
+              "src/assets/js/bootstrap.min.js",
               "src/assets/js/popper.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "src/assets/vendor/jquery-smartwizard-master/jquery-smartwizard-master/dist/js/jquery.smartWizard.js",
-              "src/assets/vendor/slick-1.8.1/slick-1.8.1/slick/slick.min.js",
               "src/assets/js/main.js"
             ]
           },
